@@ -1,0 +1,22 @@
+nav ul {
+    list-style: none;
+    border-style: ridge;
+    border-color: red;
+    border-width: 7px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+@font-face {
+    font-family: Punk;
+    src: url(../fonts/Punkband.ttf);
+}
+
+h1 {
+    color: rgba(255, 0, 0, 1);
+    font-family: Punk;
+    font-size: 70px;
+    font-weight: 500;
+}
