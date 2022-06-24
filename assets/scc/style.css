@@ -1,12 +1,52 @@
+
+header{
+
+    outline-width: 3px;
+    outline-color: blue;
+    outline-style: solid;
+
+    text-align: center;
+    align-content: center;
+
+}
+
+
+nav {
+    align-items: center;
+
+    outline-width: 3px;
+    outline-color: green;
+    outline-style: solid;
+
+}
+
 nav ul {
     list-style: none;
     border-style: ridge;
     border-color: red;
     border-width: 6px;
+
+     /*debug*/
+     outline-width: 3px;
+     outline-color: yellow;
+     outline-style: solid;
+     
+
 }
 
 nav ul li {
     display: inline;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav {
+    width: max-content;
 }
 
 @font-face {
@@ -19,4 +59,50 @@ h1 {
     font-family: Punk;
     font-size: 70px;
     font-weight: 500;
+
 }
+
+.contenido {
+    text-align: center;
+}
+
+.titulo_banda span {
+    margin: 0;
+    font-size: calc(107% + 1px);
+}
+.titulo_banda span a {
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.container {
+    display: inline-block;
+
+/* debug info visual */
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: red;
+
+    max-width: 39%;
+}
+
+.container * {
+    font-size: 30px;
+}
+
+hr {
+    border-image: url(../media/imagenes/border_top_blood_1.png) 30 round ;
+    border-width: 20px 10px 10px 10px;
+    border-color: red;
+    border-style: ridge;
+    width: 70%;
+    display: inline-block;
+
+    /*debug*/
+    outline-width: 3px;
+    outline-color: yellow;
+    outline-style: solid;
+    
+}
+
