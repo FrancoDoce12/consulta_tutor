@@ -19,6 +19,10 @@
     font-family: normalise_font;
     src: url(../fonts/Punkband.ttf);
 }
+@font-face {
+    font-family: horror_font;
+    src: url(../fonts/MortifiedDrip.ttf);
+}
 
 header nav ul {
     display: block;
