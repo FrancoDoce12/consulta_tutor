@@ -21,10 +21,6 @@ nav ul {
     border-width: 6px;
 
     display: block;
-
-    box-shadow: 0px 0px 20px 1px red;
-
-    
      
 
 }
@@ -33,18 +29,6 @@ nav ul li {
     display: inline;
     text-decoration: none;
     margin: 10px;
-
-    
-}
-a {
-    background: -webkit-linear-gradient(rgb(206, 0, 120)0%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    -webkit-text-stroke-width: calc(2px * 0.7);
-    -webkit-text-stroke-color: rgba(37, 6, 6, 0.733);
-   
 }
 
 nav ul li a {
@@ -66,8 +50,6 @@ h1 {
     font-family: Punk;
     font-size: 70px;
     font-weight: 500;
-
-    
 
 }
 
@@ -94,8 +76,6 @@ h1 {
     display: inline-block;
     max-width: 39%;
 
-    box-shadow: 0px 0px 30px 10px red;
-
 }
 
 .container * {
@@ -109,8 +89,8 @@ h1 {
 
     border-radius: 50%;
 
-    width: 60px;
-    height: 60px;
+    width: 25px;
+    height: 25px;
 }
 
 
