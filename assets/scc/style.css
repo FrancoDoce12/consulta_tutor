@@ -1,4 +1,6 @@
 
+/* The gred areas will be dawn on the grid area declaration and the rest of the related things of grid */
+
 header{
 
     text-align: center;
@@ -171,8 +173,8 @@ h1 {
     height: 60px;
 }
 
-/* ---------------------Grids--------------------- */
-/* body {
+/* ------------------------------------------ Grids ------------------------------------------ */
+body {
     display: grid;
     grid-template-areas: 
         "title       nav         nav"
@@ -181,6 +183,31 @@ h1 {
         ""
         ""
     ;
-} */
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: max-content;
+/* --------------------- Grid areas --------------------- */
+
+}
+nav ul {
+    grid-area: nav;
+}
+h1 {
+    grid-area: title;
+}
+.description_section {
+    grid-area: description;
+}
+.sub_title1{
+    grid-area: sub_title1;
+}
+.sub_title2{
+    grid-area: sub_title2;
+}
+.sub_title3{
+    grid-area: sub_title3;
+}
+
+
+
 
 
