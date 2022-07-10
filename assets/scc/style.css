@@ -49,11 +49,10 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /* -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(37, 6, 6, 0.733); */
    
 }
+
+
 a:hover {
 
     background: -webkit-linear-gradient(rgb(141, 224, 155)5%, rgb(0, 255, 0), rgb(0, 0, 0) 90%);
@@ -64,13 +63,8 @@ a:hover {
     text-shadow:-2px -4px 13px rgba(0, 255, 0, 0.61);
 }
 
-nav ul li a:houver {
-    background: -webkit-linear-gradient(rgb(141, 224, 155)5%, rgb(0, 255, 0), rgb(0, 0, 0) 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:-2px -4px 20px rgba(0, 255, 0, 0.719);
+nav ul li a:hover {
+    text-shadow:-2px -4px 20px rgba(0, 255, 0, 0.774);
 }
 
 .blue_degree {
@@ -106,7 +100,16 @@ h1 {
     font-size: 70px;
     font-weight: 500;
 
+
+    background: -webkit-linear-gradient(rgb(255, 105, 105)5%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
     transition: all 0.4s;
+
 
 }
 
@@ -129,15 +132,8 @@ h1 {
 }
 
 .section_h1:hover h1 {
-    
-    background: -webkit-linear-gradient(rgb(255, 105, 105)5%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-   
     font-size: 73px;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 
@@ -174,5 +170,17 @@ h1 {
     width: 60px;
     height: 60px;
 }
+
+/* ---------------------Grids--------------------- */
+/* body {
+    display: grid;
+    grid-template-areas: 
+        "title       nav         nav"
+        "description description description"
+        "sub_title1  sub_title2  sub_title3"
+        ""
+        ""
+    ;
+} */
 
 
