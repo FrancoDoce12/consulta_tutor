@@ -45,6 +45,14 @@ h1 {
     box-shadow: 0px 0px 30px 10px red;
 }
 
+.video iframe {
+    margin-top: 0px;
+    width: 80%;
+}
+.video h2 {
+    margin-bottom: 10px;
+}
+
 .history {
     font-size: 25px;
     overflow: auto;
@@ -93,6 +101,25 @@ body {
     grid-template-columns: repeat(2 1fr);
     grid-template-rows: max-content 300px 460px;
     gap: 10px;
+}
+
+
+@media only screen and  (min-width: 0px) and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header" 
+            "portrait"
+            "video"
+            "history"
+            "coments"
+            "publications"
+            
+        ;
+    
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
 }
 
 /* --------------------- Grid areas --------------------- */

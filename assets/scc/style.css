@@ -1,7 +1,6 @@
-
 /* The gred areas will be dawn on the grid area declaration and the rest of the related things of grid */
 
-header{
+header {
 
     text-align: center;
     align-content: center;
@@ -30,10 +29,6 @@ nav ul {
 
     white-space: nowrap;
 
-    
-
-    
-     
 
 }
 
@@ -41,16 +36,15 @@ nav ul li {
     text-decoration: none;
     margin: 1fr;
 
-
-    
 }
+
 a {
     font-weight: bolder;
     background: -webkit-linear-gradient(rgb(206, 0, 120)0%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-   
+
 }
 
 
@@ -61,11 +55,11 @@ a:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    text-shadow:-2px -4px 13px rgba(0, 255, 0, 0.61);
+    text-shadow: -2px -4px 13px rgba(0, 255, 0, 0.61);
 }
 
 nav ul li a:hover {
-    text-shadow:-2px -4px 20px rgba(0, 255, 0, 0.774);
+    text-shadow: -2px -4px 20px rgba(0, 255, 0, 0.774);
 }
 
 .blue_degree {
@@ -120,7 +114,7 @@ h1:hover {
 }
 
 
- h2 {
+h2 {
     font-size: 55px;
 }
 
@@ -135,19 +129,19 @@ h1:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    
+
 }
 
- 
+
 
 .contenido h2 hr {
-    display: inline ;
+    display: inline;
     width: 50px;
     background-color: red;
     border-color: red;
-    border:30px;
+    border: 30px;
 
-   
+
 }
 
 .mini_container {
@@ -173,7 +167,7 @@ h3 a img {
 /* ------------------------------------------ Grids ------------------------------------------ */
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "title       title       nav"
         "description description description"
         "sub_title1  sub_title2  sub_title3"
@@ -182,12 +176,110 @@ body {
         "footer      footer      footer"
     ;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: max-content ;
+    grid-template-rows: max-content;
 }
 
+@media only screen and (min-width: 760px) and (max-width: 1100px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "nav         nav"
+            "title       title"
+            "description description"
+            "sub_title1  sub_title2"
+            "comiunity   store"
+            "comiunity   store"
+            "sub_title3  sub_title3"
+            "music       music"
+            "footer      footer"
+        ;
+        grid-template-columns: repeat(2 1fr);
+
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    header nav ul {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
     
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 760px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "title"
+            "description"
+            "sub_title1"
+            "comiunity"
+            "comiunity"
+            "sub_title2"
+            "store"
+            "store"
+            "sub_title3"
+            "music"
+            "music"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    h1 {
+        margin-top: 35px;
+    }
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 460px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "title"
+            "description"
+            "sub_title1"
+            "comiunity"
+            "comiunity"
+            "sub_title2"
+            "store"
+            "store"
+            "sub_title3"
+            "music"
+            "music"
+            "footer"
+        ;
+        grid-template-columns: 1fr;
+
+    }
+
+    html, *, body {
+        margin: 30px 0px;
+        padding: 30px 0px;
+    }
+    
+    h1 {
+        margin-top: 35px;
+    }
+
+}
+
+
 /* --------------- Modification for grids --------------- */
-*{
+* {
     padding: 0;
     margin: 30px;
 }
@@ -200,30 +292,36 @@ header {
     margin: auto auto auto 0px;
     padding: 0px;
 }
+
 header nav {
     padding: 0;
     margin: 0;
 }
+
 header nav ul {
     padding: 0;
     margin: 0;
 }
+
 .description_section * {
     text-align: left;
     margin-left: 0px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin: auto;
 }
+
 .content {
     text-align: center;
 }
+
 .content.mini_container {
     margin: auto;
 }
-.content.mini_container *{
+
+.content.mini_container * {
     margin: auto;
 }
 
@@ -234,35 +332,39 @@ h2{
 header {
     grid-area: nav;
 }
+
 h1 {
     grid-area: title;
 }
+
 .description_section {
     grid-area: description;
 }
-.sub_title1{
+
+.sub_title1 {
     grid-area: sub_title1;
 }
-.sub_title2{
+
+.sub_title2 {
     grid-area: sub_title2;
 }
-.sub_title3{
+
+.sub_title3 {
     grid-area: sub_title3;
 }
-.comiunity.content{
+
+.comiunity.content {
     grid-area: comiunity;
 }
+
 .store.content {
     grid-area: store;
 }
-.music.content{
+
+.music.content {
     grid-area: music;
 }
+
 footer {
     grid-area: footer;
 }
-
-
-
-
-
