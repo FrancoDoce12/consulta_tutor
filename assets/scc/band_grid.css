@@ -1,0 +1,165 @@
+
+/* The gred areas will be dawn on the grid area declaration and the rest of the related things of grid */
+
+body {
+    margin: 0px;
+
+}
+
+a{
+    text-decoration: none;
+}
+ul {
+    width: 100%;
+}
+
+ul li {
+    display: inline;
+    margin: auto;
+
+}
+ul li a {
+    margin: 10px;
+}
+
+h1 span {
+    font-size: 40px;
+
+    font-weight: bolder;
+    background: -webkit-linear-gradient(rgb(206, 0, 120)0%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+h1 {
+
+    
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+}
+
+.mini_container {
+    box-shadow: 0px 0px 30px 10px red;
+    transition: all 0.4s;
+}
+.mini_container:hover {
+    box-shadow: 0px 0px 30px 10px rgb(0, 255, 0);
+    transition: all 0.4s;
+}
+.mini_container * {
+    transition: all 0.4s; 
+}
+.mini_container:hover * {
+    color: rgb(0, 255, 0);
+    transition: all 0.4s; 
+}
+
+
+
+.video iframe {
+    margin-top: 0px;
+    width: 80%;
+}
+.video h2 {
+    margin-bottom: 10px;
+}
+
+.history {
+    font-size: 25px;
+    overflow: auto;
+}
+
+.portrait {
+    z-index: 0;
+    margin-top: 0px;
+
+    background-image: url(../media/imagenes/cacaa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coment.header_coment {
+    font-size: 30px;
+    text-align: left;
+    margin: 10px;
+}
+.coment.messenger {
+    margin: 0px;
+}
+
+.coment {
+    font-size: 20px;
+}
+
+.coment2 {
+    text-align: right;
+    font-size: 20px;
+}
+
+/* ------------------------------------------ Grids ------------------------------------------ */
+body {
+    display: grid;
+    grid-template-areas:
+        "header         header" 
+        "portrait       portrait"
+        "video          history"
+        "coments        coments"
+        "publications   publications"
+        
+    ;
+
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: max-content 300px 460px;
+    gap: 10px;
+}
+
+
+@media only screen and  (min-width: 0px) and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header" 
+            "portrait"
+            "video"
+            "history"
+            "coments"
+            "publications"
+            
+        ;
+    
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+}
+
+/* --------------------- Grid areas --------------------- */
+header {
+    grid-area: header;
+}
+
+.portrait {
+    grid-area: portrait;
+}
+
+.video {
+    grid-area: video;
+}
+.history {
+    grid-area: history;
+}
+.coments {
+    grid-area: coments;
+}
+.publications {
+    grid-area: publications;
+}
+
+
+
+
+
+
