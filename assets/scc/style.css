@@ -94,7 +94,7 @@ h1 {
     margin: auto;
     color: rgba(255, 0, 0, 1);
     font-family: Punk;
-    font-size: 70px;
+    font-size: 85px;
     font-weight: 500;
 
 
@@ -109,7 +109,7 @@ h1 {
 }
 
 h1:hover {
-    font-size: 93px;
+    transform: scale(1.2);
     transition: all 0.3s;
 }
 
@@ -117,20 +117,36 @@ h1:hover {
 h2 {
     font-size: 55px;
 }
-
-.description_section h2 {
-    font-size: 30px;
-}
-
-.section:hover h2 {
-    font-weight: bolder;
+.sub_title1, .sub_title2, .sub_title3 {
     background: -webkit-linear-gradient(rgb(206, 0, 120)0%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
 }
+
+
+.description_section h2 {
+    font-size: 30px;
+}
+.sub_title1, .sub_title2,.sub_title3 {
+    transition: all 0.4s;
+}
+
+.sub_title1:hover, .sub_title2:hover,.sub_title3:hover {
+
+    background: -webkit-linear-gradient(rgb(141, 224, 155)5%, rgb(0, 255, 0), rgb(0, 0, 0) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: -2px -4px 13px rgba(0, 255, 0, 0.41);
+
+    
+    transition: all 0.4s;
+    transform: scale(1.3);
+}
+
+
 
 
 
@@ -145,12 +161,30 @@ h2 {
 }
 
 .mini_container {
-    box-shadow: 0px 0px 30px 10px red;
-
+    margin: auto;
+    box-shadow: 0px 0px 20px 10px red;
+    transition: all 0.4s;
 }
 
 .mini_container * {
     font-size: 30px;
+    transition: all 0.4s;
+}
+
+.mini_container:hover {
+    box-shadow: 0px 0px 20px 10px rgb(0, 255, 0);
+    transition: all 0.4s;
+    transform: scale(1.2);
+}
+.mini_container:hover a{
+    background: -webkit-linear-gradient(rgb(141, 224, 155)5%, rgb(0, 255, 0), rgb(0, 0, 0) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mini_container:hover h3 {
+    color: rgb(0, 255, 0); 
+    transition: all 0.4s;
 }
 
 h3 a img {
