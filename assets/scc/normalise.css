@@ -10,9 +10,6 @@
     font-family: normalise_font, horror_font;
     font-size: 107%;
     font-weight: 500;
-
-    
-    
 }
 
 body {
@@ -53,7 +50,7 @@ nav {
     margin-top: 0px;
     align-items: center;
     width: auto;
-    display: block;
+    display: inline;
 
 }
 
@@ -84,7 +81,6 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-   
 }
 
 a:hover {

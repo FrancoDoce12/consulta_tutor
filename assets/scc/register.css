@@ -1,0 +1,54 @@
+@font-face {
+    font-family: normalise_font;
+    src: url(../fonts/Punkband.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: rgb(255, 0, 0); 
+    background-color: rgb(0, 0, 0);
+
+    font-family: normalise_font, horror_font;
+    font-size: 107%;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+
+
+a {
+    font-weight: bolder;
+    background: -webkit-linear-gradient(rgb(206, 0, 120)0%, rgb(255, 0, 0), rgb(0, 0, 0) 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+
+    background: -webkit-linear-gradient(rgb(141, 224, 155)5%, rgb(0, 255, 0), rgb(0, 0, 0) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:0px 0px 13px rgba(0, 255, 0, 0.81);
+}
+
+
+ul {
+    display: block;
+    text-align: center;
+    list-style: none;
+    width: fit-content;
+    align-self: center;
+
+    border-style: ridge;
+    border-color: red;
+
+}
+li {
+    display: inline;
+}
